@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>VLABS CHALLENGE</title>
+  </head>
+  <body>
+    <div class="filter-section">
+      <p class="invoices-heading">All Invoices</p>
+
+      <div class="filter-list">
+        <div class="filter-container">
+          <p class="filter-label">Begin Date</p>
+          <input
+            class="filter-input begin"
+            type="date"
+            name="beginDate"
+            id="begin-input"
+          />
+        </div>
+
+        <div class="filter-container">
+          <p class="filter-label">End Date</p>
+          <input
+            class="filter-input end"
+            type="date"
+            name="endDate"
+            id="end-input"
+          />
+        </div>
+
+        <div class="filter-container">
+          <p class="filter-label">Status</p>
+
+          <select class="filter-input status" name="" id="">
+            <option value="">Any</option>
+            <option value="">Draft</option>
+            <option value="">Paid</option>
+            <option value="">Partial Payment</option>
+          </select>
+        </div>
+
+        <div class="filter-container">
+          <p class="filter-label">Client</p>
+          <select class="filter-input client" name="" id="">
+            <option value="">Any</option>
+            <option value="">Draft</option>
+            <option value="">Paid</option>
+            <option value="">Partial Payment</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="info">
+        *This data has been shown according to your given informations
+      </p>
+    </div>
+
+    <table class="invoice-table">
+      <thead class="invoice-table-header">
+        <th>Invoice</th>
+        <th>Client name</th>
+        <th>Client type</th>
+        <th>Date</th>
+        <th>Due date</th>
+        <th>Total</th>
+        <th>Balance</th>
+        <th>Status</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="invoice-data invoice-number">1</td>
+          <td class="invoice-data invoice-client-name">1</td>
+          <td class="invoice-data invoice-client-type">1</td>
+          <td class="invoice-data invoice-date">1</td>
+          <td class="invoice-data invoice-due-date">1</td>
+          <td class="invoice-data invoice-total">1</td>
+          <td class="invoice-data invoice-balance">1</td>
+          <td class="invoice-data invoice-status">
+            <span class="status-type">Draft</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="invoice-data invoice-number">1</td>
+          <td class="invoice-data invoice-client-name">1</td>
+          <td class="invoice-data invoice-client-type">1</td>
+          <td class="invoice-data invoice-date">1</td>
+          <td class="invoice-data invoice-due-date">1</td>
+          <td class="invoice-data invoice-total">1</td>
+          <td class="invoice-data invoice-balance">1</td>
+          <td class="invoice-data invoice-status">
+            <span class="status-type">Draft</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="invoice-data invoice-number">1</td>
+          <td class="invoice-data invoice-client-name">1</td>
+          <td class="invoice-data invoice-client-type">1</td>
+          <td class="invoice-data invoice-date">1</td>
+          <td class="invoice-data invoice-due-date">1</td>
+          <td class="invoice-data invoice-total">1</td>
+          <td class="invoice-data invoice-balance">1</td>
+          <td class="invoice-data invoice-status">
+            <span class="status-type">Draft</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+:root{
+  --pink-color: #F58C93;
+  --voilet-color: #5858BA;
+  --round-border: 15px;
+}
+
+html{
+  color: rgb(41, 41, 41);
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background: #F6F6FE;
+  padding: 2rem;
+}
+
+.filter-section{
+  background-color: #F5E9EB;
+  padding: 2rem 3rem;
+  border-radius: var(--round-border);
+}
+
+.invoices-heading{
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--pink-color);
+}
+
+.filter-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 1rem 0rem;
+}
+
+.filter-container{
+  
+}
+
+
+.filter-label{
+  font-weight: 500;
+  margin: 0.5rem 0rem;
+}
+
+.filter-input{
+  border: none;
+  font-family: "Roboto";
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  /* cursor: pointer; */
+  border-radius: 10px;
+  color: rgb(235, 235, 235);
+}
+
+.filter-input:hover,.filter-input:focus {
+  border: none;
+  outline: none;
+}
+
+.filter-input::-webkit-calendar-picker-indicator{
+  filter: invert(1);
+}
+
+.filter-input.begin{
+  background-color: var(--voilet-color);
+}
+
+.filter-input.end{
+  background-color: #9FA3E0;
+}
+
+.filter-input.status{
+  background: var(--pink-color);
+}
+
+.filter-input option{
+  background: white;
+}
+
+
+.filter-input.client{
+  background-color: #6F8EFA;
+}
+
+.info{
+  margin-top: 2rem;
+  color: rgb(107, 107, 107);
+}
+
+.invoice-table{
+  width: 100%;
+  margin: 2rem 0rem;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.invoice-table-header{
+  padding: 1rem;
+  background: white; 
+}
+
+.invoice-table-header th{
+  padding: 1rem;
+  background: white; 
+  font-weight: 500;
+}
+
+.invoice-table-header th:first-child{
+  border-bottom-left-radius: var(--round-border);
+  border-top-left-radius: var(--round-border);
+}
+
+.invoice-table-header th:last-child{
+  border-top-right-radius: var(--round-border);
+  border-bottom-right-radius: var(--round-border);
+}
+
+tbody{
+  background: white;
+}
+
+tbody:before {
+  line-height:1em; 
+  content:"\200C"; 
+  display:block; 
+  background: #F6F6FE;
+}
+
+td{
+  padding: 1rem;
+}
+
+tr:first-child td:first-child{
+  border-top-left-radius: var(--round-border);
+}
+
+tr:first-child td:last-child{
+  border-top-right-radius: var(--round-border);
+}
+
+tr:last-child td:first-child{
+  border-bottom-left-radius: var(--round-border);
+}
+
+tr:last-child td:last-child{
+  border-bottom-right-radius: var(--round-border);
+}
+
+.invoice-number, .invoice-client-name, .invoice-client-type{
+  color: var(--voilet-color);
+}
+
+.invoice-date, .invoice-due-date{
+  color: gray;
+}
+
+.invoice-total, .invoice-balance{
+  color: var(--pink-color);
+}
+
+.status-type{
+  padding: 0.2rem 0.8rem;
+  background: #5858BA;
+  border-radius: 5px;
+  color: white;
+}
