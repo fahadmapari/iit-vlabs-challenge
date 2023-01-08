@@ -36,6 +36,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
   width: 70%;
   margin: 1rem 0rem;
 }
@@ -55,9 +57,13 @@ body{
   font-family: "Roboto";
   font-size: 1.1rem;
   padding: 0.5rem 1rem;
-  /* cursor: pointer; */
+  cursor: pointer;
   border-radius: 10px;
   color: rgb(235, 235, 235);
+}
+
+.filter-input option{
+  color: black;
 }
 
 .filter-input:hover,.filter-input:focus {
@@ -90,6 +96,16 @@ body{
   background-color: #6F8EFA;
 }
 
+select{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABkUlEQVR4nN2UTU4CQRCFJxBIjLB0IUcQLoAr//YaRL2B0UCG6C0UL+BWjR7DlR5AMWLQrQuW4ELcfKawJimg588lL+lk5lX1q5lX3eV5cw0gDxwAt0AX+NLVVW5fcv4rvgt8EI93oJZGOAtcGIEnoAWUgUVdZeWeTV4byCQpEIh/A8dRm/RjGsBI95wnsSUQX0/x1xumyE5UQwPPj5KKBwCaurfnbLyelsDzeC/ddnVUY8+VcKdB33BXwMJM8uRfX5r3E9W4cSW/aXDFcIJHoOTIL2kMw1XGO6DrKjDUYGGqgKAPrBl+FfgcRyYLFJUaugoMNFg03KE5HSN9n+EcBQaJLFK+ar/WQLjqVG6kRTJbBC1HbAm4N+IPwLIj71Tj164CMrjQ658NOzH8rXzIMX1RjboXIiCDS9DwUgLwzUXLhSXVTPM2U4hvAT+6dzsuuW2KNF12TdniG/GzJF+TkaloGtrRGyonpKCrog0NPB+LpxoxMhXVzzj0Ym2JKJKTwSWzBXjV2y5LnoWrhzZ0bvALCC8xe8vDvF8AAAAASUVORK5CYII=') !important;
+    background-repeat: no-repeat, repeat !important;
+    background-position: right .7em top 50%, 0 0 !important;
+    background-size: 1em auto, 100% !important;
+}
+
 .info{
   margin-top: 2rem;
   color: rgb(107, 107, 107);
@@ -111,6 +127,11 @@ body{
   padding: 1rem;
   background: white; 
   font-weight: 500;
+  cursor: pointer;
+}
+
+.invoice-table-header th:hover img{
+  opacity: 0.5;
 }
 
 .invoice-table-header th:first-child{
@@ -168,7 +189,22 @@ tr:last-child td:last-child{
 
 .status-type{
   padding: 0.2rem 0.8rem;
-  background: #5858BA;
   border-radius: 5px;
   color: white;
+}
+
+.status-type.paid {
+  background: #6F8EFA;
+}
+
+.status-type.draft {
+  background: var(--pink-color);
+}
+
+.status-type.Partial.Payment {
+  background: var(--voilet-color);
+}
+
+.invoice-status{
+  text-align: left;
 }

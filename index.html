@@ -24,7 +24,7 @@
             class="filter-input begin"
             type="date"
             name="beginDate"
-            id="begin-input"
+            id="beginInput"
           />
         </div>
 
@@ -34,28 +34,27 @@
             class="filter-input end"
             type="date"
             name="endDate"
-            id="end-input"
+            id="endInput"
           />
         </div>
 
         <div class="filter-container">
           <p class="filter-label">Status</p>
 
-          <select class="filter-input status" name="" id="">
-            <option value="">Any</option>
-            <option value="">Draft</option>
-            <option value="">Paid</option>
-            <option value="">Partial Payment</option>
+          <select class="filter-input status" name="" id="statusInput">
+            <option value="any">Any</option>
+            <option value="draft">Draft</option>
+            <option value="paid">Paid</option>
+            <option value="partialpayment">Partial Payment</option>
           </select>
         </div>
 
         <div class="filter-container">
           <p class="filter-label">Client</p>
-          <select class="filter-input client" name="" id="">
-            <option value="">Any</option>
-            <option value="">Draft</option>
-            <option value="">Paid</option>
-            <option value="">Partial Payment</option>
+          <select class="filter-input client" name="" id="clientInput">
+            <option value="any">Any</option>
+            <option value="in-state">In-state</option>
+            <option value="out-state">Out-state</option>
           </select>
         </div>
       </div>
@@ -67,18 +66,66 @@
 
     <table class="invoice-table">
       <thead class="invoice-table-header">
-        <th>Invoice</th>
-        <th>Client name</th>
-        <th>Client type</th>
-        <th>Date</th>
-        <th>Due date</th>
-        <th>Total</th>
-        <th>Balance</th>
-        <th>Status</th>
+        <th data-id="invoiceId">
+          Invoice
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAp0lEQVR4nOWVQQqDMBBF38poj+EqLryK999aaAX3XSvCDIQiGNMZEfrgQ1Dyf5gkE7gZD6DxMu+BSbSNTenEeBHNliG9GKrxbBnSJStXw7jzzcxc+TkkLcsHGID2S4P8Ox1SA+9kQ5dMvWTuIQEYCwJGmZtF2ClJe6CKvyIUlCicMX96bnItR87tmLpftJx2EK36UfRsdpe0ayVdtbk5guuTqbg++kWs2B56z9WHIiQAAAAASUVORK5CYII="
+            width="12"
+          />
+        </th>
+        <th data-id="clientName">
+          Client name
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAp0lEQVR4nOWVQQqDMBBF38poj+EqLryK999aaAX3XSvCDIQiGNMZEfrgQ1Dyf5gkE7gZD6DxMu+BSbSNTenEeBHNliG9GKrxbBnSJStXw7jzzcxc+TkkLcsHGID2S4P8Ox1SA+9kQ5dMvWTuIQEYCwJGmZtF2ClJe6CKvyIUlCicMX96bnItR87tmLpftJx2EK36UfRsdpe0ayVdtbk5guuTqbg++kWs2B56z9WHIiQAAAAASUVORK5CYII="
+            width="12"
+          />
+        </th>
+        <th data-id="clientType">
+          Client type
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAp0lEQVR4nOWVQQqDMBBF38poj+EqLryK999aaAX3XSvCDIQiGNMZEfrgQ1Dyf5gkE7gZD6DxMu+BSbSNTenEeBHNliG9GKrxbBnSJStXw7jzzcxc+TkkLcsHGID2S4P8Ox1SA+9kQ5dMvWTuIQEYCwJGmZtF2ClJe6CKvyIUlCicMX96bnItR87tmLpftJx2EK36UfRsdpe0ayVdtbk5guuTqbg++kWs2B56z9WHIiQAAAAASUVORK5CYII="
+            width="12"
+          />
+        </th>
+        <th data-id="date">
+          Date
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAp0lEQVR4nOWVQQqDMBBF38poj+EqLryK999aaAX3XSvCDIQiGNMZEfrgQ1Dyf5gkE7gZD6DxMu+BSbSNTenEeBHNliG9GKrxbBnSJStXw7jzzcxc+TkkLcsHGID2S4P8Ox1SA+9kQ5dMvWTuIQEYCwJGmZtF2ClJe6CKvyIUlCicMX96bnItR87tmLpftJx2EK36UfRsdpe0ayVdtbk5guuTqbg++kWs2B56z9WHIiQAAAAASUVORK5CYII="
+            width="12"
+          />
+        </th>
+        <th data-id="dueDate">
+          Due date
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAp0lEQVR4nOWVQQqDMBBF38poj+EqLryK999aaAX3XSvCDIQiGNMZEfrgQ1Dyf5gkE7gZD6DxMu+BSbSNTenEeBHNliG9GKrxbBnSJStXw7jzzcxc+TkkLcsHGID2S4P8Ox1SA+9kQ5dMvWTuIQEYCwJGmZtF2ClJe6CKvyIUlCicMX96bnItR87tmLpftJx2EK36UfRsdpe0ayVdtbk5guuTqbg++kWs2B56z9WHIiQAAAAASUVORK5CYII="
+            width="12"
+          />
+        </th>
+        <th data-id="total">
+          Total
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAp0lEQVR4nOWVQQqDMBBF38poj+EqLryK999aaAX3XSvCDIQiGNMZEfrgQ1Dyf5gkE7gZD6DxMu+BSbSNTenEeBHNliG9GKrxbBnSJStXw7jzzcxc+TkkLcsHGID2S4P8Ox1SA+9kQ5dMvWTuIQEYCwJGmZtF2ClJe6CKvyIUlCicMX96bnItR87tmLpftJx2EK36UfRsdpe0ayVdtbk5guuTqbg++kWs2B56z9WHIiQAAAAASUVORK5CYII="
+            width="12"
+          />
+        </th>
+        <th data-id="balance">
+          Balance
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAp0lEQVR4nOWVQQqDMBBF38poj+EqLryK999aaAX3XSvCDIQiGNMZEfrgQ1Dyf5gkE7gZD6DxMu+BSbSNTenEeBHNliG9GKrxbBnSJStXw7jzzcxc+TkkLcsHGID2S4P8Ox1SA+9kQ5dMvWTuIQEYCwJGmZtF2ClJe6CKvyIUlCicMX96bnItR87tmLpftJx2EK36UfRsdpe0ayVdtbk5guuTqbg++kWs2B56z9WHIiQAAAAASUVORK5CYII="
+            width="12"
+          />
+        </th>
+        <th data-id="status">
+          Status
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAp0lEQVR4nOWVQQqDMBBF38poj+EqLryK999aaAX3XSvCDIQiGNMZEfrgQ1Dyf5gkE7gZD6DxMu+BSbSNTenEeBHNliG9GKrxbBnSJStXw7jzzcxc+TkkLcsHGID2S4P8Ox1SA+9kQ5dMvWTuIQEYCwJGmZtF2ClJe6CKvyIUlCicMX96bnItR87tmLpftJx2EK36UfRsdpe0ayVdtbk5guuTqbg++kWs2B56z9WHIiQAAAAASUVORK5CYII="
+            width="12"
+          />
+        </th>
       </thead>
 
-      <tbody>
-        <tr>
+      <tbody id="invoicesBody">
+        <!-- <tr>
           <td class="invoice-data invoice-number">1</td>
           <td class="invoice-data invoice-client-name">1</td>
           <td class="invoice-data invoice-client-type">1</td>
@@ -89,34 +136,10 @@
           <td class="invoice-data invoice-status">
             <span class="status-type">Draft</span>
           </td>
-        </tr>
-
-        <tr>
-          <td class="invoice-data invoice-number">1</td>
-          <td class="invoice-data invoice-client-name">1</td>
-          <td class="invoice-data invoice-client-type">1</td>
-          <td class="invoice-data invoice-date">1</td>
-          <td class="invoice-data invoice-due-date">1</td>
-          <td class="invoice-data invoice-total">1</td>
-          <td class="invoice-data invoice-balance">1</td>
-          <td class="invoice-data invoice-status">
-            <span class="status-type">Draft</span>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="invoice-data invoice-number">1</td>
-          <td class="invoice-data invoice-client-name">1</td>
-          <td class="invoice-data invoice-client-type">1</td>
-          <td class="invoice-data invoice-date">1</td>
-          <td class="invoice-data invoice-due-date">1</td>
-          <td class="invoice-data invoice-total">1</td>
-          <td class="invoice-data invoice-balance">1</td>
-          <td class="invoice-data invoice-status">
-            <span class="status-type">Draft</span>
-          </td>
-        </tr>
+        </tr> -->
       </tbody>
     </table>
+
+    <script src="/app.js"></script>
   </body>
 </html>

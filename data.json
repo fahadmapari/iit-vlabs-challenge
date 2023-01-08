@@ -1,0 +1,152 @@
+[
+  {
+    "invoiceId": 1,
+    "clientName": "John Smith",
+    "clientType": "in-state",
+    "date": "01-12-2022",
+    "dueDate": "15-12-2022",
+    "total": 1000,
+    "balance": 1000,
+    "status": "paid"
+  },
+  {
+    "invoiceId": 2,
+    "clientName": "Jane Doe",
+    "clientType": "out-state",
+    "date": "02-12-2022",
+    "dueDate": "16-12-2022",
+    "total": 2000,
+    "balance": 2000,
+    "status": "Partial Payment"
+  },
+  {
+    "invoiceId": 3,
+    "clientName": "Bob Johnson",
+    "clientType": "in-state",
+    "date": "03-12-2022",
+    "dueDate": "17-12-2022",
+    "total": 3000,
+    "balance": 3000,
+    "status": "draft"
+  },
+  {
+    "invoiceId": 4,
+    "clientName": "Alice Williams",
+    "clientType": "out-state",
+    "date": "04-12-2022",
+    "dueDate": "18-12-2022",
+    "total": 4000,
+    "balance": 4000,
+    "status": "draft"
+  },
+  {
+    "invoiceId": 5,
+    "clientName": "Mike Brown",
+    "clientType": "in-state",
+    "date": "05-12-2022",
+    "dueDate": "19-12-2022",
+    "total": 5000,
+    "balance": 5000,
+    "status": "Partial Payment"
+  },
+  {
+    "invoiceId": 6,
+    "clientName": "Sara Davis",
+    "clientType": "out-state",
+    "date": "06-12-2022",
+    "dueDate": "20-12-2022",
+    "total": 6000,
+    "balance": 6000,
+    "status": "draft"
+  },
+  {
+    "invoiceId": 7,
+    "clientName": "James Smith",
+    "clientType": "in-state",
+    "date": "07-12-2022",
+    "dueDate": "21-12-2022",
+    "total": 7000,
+    "balance": 7000,
+    "status": "draft"
+  },
+  {
+    "invoiceId": 8,
+    "clientName": "Emily Johnson",
+    "clientType": "out-state",
+    "date": "08-12-2022",
+    "dueDate": "22-12-2022",
+    "total": 8000,
+    "balance": 8000,
+    "status": "Partial Payment"
+  },
+  {
+    "invoiceId": 9,
+    "clientName": "David Williams",
+    "clientType": "in-state",
+    "date": "09-12-2022",
+    "dueDate": "23-12-2022",
+    "total": 9000,
+    "balance": 9000,
+    "status": "paid"
+  },
+  {
+    "invoiceId": 10,
+    "clientName": "Jessica Davis",
+    "clientType": "out-state",
+    "date": "10-12-2022",
+    "dueDate": "24-12-2022",
+    "total": 10000,
+    "balance": 10000,
+    "status": "draft"
+  },
+  {
+    "invoiceId": 11,
+    "clientName": "William Smith",
+    "clientType": "in-state",
+    "date": "11-12-2022",
+    "dueDate": "25-12-2022",
+    "total": 11000,
+    "balance": 11000,
+    "status": "draft"
+  },
+  {
+    "invoiceId": 12,
+    "clientName": "Ashley Johnson",
+    "clientType": "out-state",
+    "date": "12-12-2022",
+    "dueDate": "26-12-2022",
+    "total": 12000,
+    "balance": 12000,
+    "status": "paid"
+  },
+  {
+    "invoiceId": 13,
+    "clientName": "Samantha Williams",
+    "clientType": "in-state",
+    "date": "13-12-2022",
+    "dueDate": "27-12-2022",
+    "total": 13000,
+    "balance": 13000,
+    "status": "draft"
+  },
+  {
+    "invoiceId": 14,
+    "clientName": "Christopher Davis",
+    "clientType": "out-state",
+    "date": "14-12-2022",
+    "dueDate": "28-12-2022",
+    "total": 14000,
+    "balance": 14000,
+    "status": "draft"
+  },
+  {
+    "invoiceId": 15,
+    "clientName": "Emily Williams",
+    "clientType": "in-state",
+    "date": "15-12-2022",
+    "dueDate": "29-12-2022",
+    "total": 15000,
+    "balance": 15000,
+    "status": "draft"
+  }
+]
