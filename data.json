@@ -17,7 +17,7 @@
     "dueDate": "16-12-2022",
     "total": 2000,
     "balance": 2000,
-    "status": "Partial Payment"
+    "status": "partial payment"
   },
   {
     "invoiceId": 3,
@@ -47,7 +47,7 @@
     "dueDate": "19-12-2022",
     "total": 5000,
     "balance": 5000,
-    "status": "Partial Payment"
+    "status": "partial payment"
   },
   {
     "invoiceId": 6,
@@ -77,7 +77,7 @@
     "dueDate": "22-12-2022",
     "total": 8000,
     "balance": 8000,
-    "status": "Partial Payment"
+    "status": "paid"
   },
   {
     "invoiceId": 9,
@@ -97,7 +97,7 @@
     "dueDate": "24-12-2022",
     "total": 10000,
     "balance": 10000,
-    "status": "draft"
+    "status": "partial payment"
   },
   {
     "invoiceId": 11,
@@ -137,7 +137,7 @@
     "dueDate": "28-12-2022",
     "total": 14000,
     "balance": 14000,
-    "status": "draft"
+    "status": "partial payment"
   },
   {
     "invoiceId": 15,
@@ -147,6 +147,6 @@
     "dueDate": "29-12-2022",
     "total": 15000,
     "balance": 15000,
-    "status": "draft"
+    "status": "partial payment"
   }
 ]

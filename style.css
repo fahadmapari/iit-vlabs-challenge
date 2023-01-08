@@ -20,6 +20,7 @@ body{
   padding: 2rem;
 }
 
+/* filter section */
 .filter-section{
   background-color: #F5E9EB;
   padding: 2rem 3rem;
@@ -111,6 +112,9 @@ select{
   color: rgb(107, 107, 107);
 }
 
+/* filter section end */
+
+/* table section */
 .invoice-table{
   width: 100%;
   margin: 2rem 0rem;
@@ -201,10 +205,12 @@ tr:last-child td:last-child{
   background: var(--pink-color);
 }
 
-.status-type.Partial.Payment {
+.status-type.partial.payment {
   background: var(--voilet-color);
 }
 
 .invoice-status{
   text-align: left;
 }
+
+/* table section end */
