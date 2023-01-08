@@ -1,7 +1,8 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
 }
 
 :root{
@@ -34,10 +35,17 @@ body{
 }
 
 .filter-list{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 1rem;
   width: 70%;
   margin: 1rem 0rem;
@@ -73,7 +81,8 @@ body{
 }
 
 .filter-input::-webkit-calendar-picker-indicator{
-  filter: invert(1);
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .filter-input.begin{
@@ -120,6 +129,7 @@ select{
   margin: 2rem 0rem;
   text-align: center;
   border-collapse: collapse;
+
 }
 
 .invoice-table-header{
@@ -213,4 +223,4 @@ tr:last-child td:last-child{
   text-align: left;
 }
 
-/* table section end */
+/* table section end *
